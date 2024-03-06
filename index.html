@@ -3,13 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PWA Installable Website</title>
+    <title>Probetemplates</title>
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
+    <style>.responsive-iframe {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  }
+  .responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }</style>
 </head>
 <body>
-    <iframe width="100%" height="730px" src="https://probetemplates.blogspot.com"></iframe>
-
+    <div class="responsive-iframe">
+  <iframe src="https://probetemplates.blogspot.com" frameborder="0" allowfullscreen></iframe>
+</div>
+    
     <!-- Add more containers with content and styling as needed -->
 
     <script src="app.js"></script>
